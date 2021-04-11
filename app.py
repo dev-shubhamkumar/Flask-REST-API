@@ -24,6 +24,7 @@ def create_tables():
 
 jwt = JWTManager(app)  # /not creating auth
 
+
 api.add_resource(Store, '/store/<string:name>')
 api.add_resource(StoreList, '/stores')
 api.add_resource(Item, '/item/<string:name>')

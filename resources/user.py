@@ -49,8 +49,6 @@ class User(Resource):
 
 
 class UserLogin(Resource):
-    
-    
     @classmethod
     def post(cls):
         data = _user_parser.parse_args()
